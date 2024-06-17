@@ -13,8 +13,8 @@ RUN mkdir /app && \
 
 USER 1000
 
-COPY --chown=1000:1000 ./target/$APP_NAME-$APP_VER-SNAPSHOT.jar /app/$APP_NAME.jar
+COPY --chown=1000:1000 ./target/$APP_NAME-$APP_VER-SNAPSHOT.jar /app/app.jar
 WORKDIR /app
 
 EXPOSE 8080
-ENTRYPOINT [ "java", "-jar", "/app/$APP_NAME.jar" ]
+ENTRYPOINT [ "java", "-jar", "/app/app.jar" ]
