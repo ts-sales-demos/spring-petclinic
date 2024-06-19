@@ -35,7 +35,7 @@ import java.util.Locale;
 public class PetClinicApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PetClinicApplication.class, args);
+		pringApplication.run(PetClinicApplication.class, args);
 	}
 
 }
